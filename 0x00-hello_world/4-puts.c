@@ -9,7 +9,7 @@
 int main(void)
 {
 
-char strValue[] = "\"Programming is like building a multilingual puzzle \n";
+char strValue[] = "\"Programming is like building a multilingual puzzle";
 
 puts(strValue);
 
