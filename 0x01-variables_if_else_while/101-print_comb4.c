@@ -1,48 +1,38 @@
 #include <stdio.h>
 
 /**
- *main - Entry point
+ * main - Entry point
  *
- *Return: Always 0 (Success)
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
+	int first;
+	int second;
+	int third;
 
-	int i, j, k, l, s, h, p;
-
-	p = 1;
-	s = 1;
-	l = 2;
-	h = 2;
-
-	for (i = 0; i <= 7; i++)
+	for (first = '0'; first <= '9'; first++)
 	{
-		if (j > 8)
+		for (second = '0'; second <= '9'; second++)
 		{
-			s++;
-			h++;
-			p = s;
-			l = h;
-		}
-		for (j = p; j <= 8; j++)
-		{
-			for (k = l; k <= 9; k++)
+			for (third = '0'; third <= '9'; third++)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
-				putchar(k + '0');
-				if (i != 7 || j != 8 || k != 9)
+				if (!((first >= second) || (second == third) || (third < second)))
 				{
-					putchar(',');
-					putchar(' ');
+					putchar(first);
+					putchar(second);
+					putchar(third);
+
+					if (!(third == '9' && second == '8' && first == '7'))
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
-			l++;
 		}
-		p++;
 	}
-	putchar('\n');
 
+	putchar('\n');
 	return (0);
 }
