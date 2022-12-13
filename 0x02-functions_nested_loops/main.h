@@ -12,7 +12,7 @@ int print_sign(int n);
 
 int _abs(int abs_int);
 
-int print_last_digit(int);
+int print_last_digit(int lastNum);
 
 void jack_bauer(void);
 
