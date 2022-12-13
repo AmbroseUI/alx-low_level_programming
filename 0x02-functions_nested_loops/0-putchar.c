@@ -1,5 +1,4 @@
-#include <stdio.h>
-#include <unistd.h>
+#include "main.h"
 
 /**
  *main - Entry point
@@ -9,9 +8,12 @@
 
 int main(void)
 {
-	write(0, "_putchar\n", 9);
+	char val_putchar[9] = "_putchar\n";
+	int k;
 
-
+	for (k = 0; k <= 8; k++)
+	{
+		_putchar(val_putchar[k]);
+	}
 	return (0);
-
 }
