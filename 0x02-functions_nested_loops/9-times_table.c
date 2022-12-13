@@ -1,28 +1,49 @@
 #include "main.h"
 
 /**
- *times_table - Generate time table.
+ * times_table - print the nine times table
  *
- * Return: set of values
+ * makes use of variable num1, num2 and calc for operations
+ *
+ * Return: No return value
  */
-
 void times_table(void)
 {
-	int i,j, k;
-	for (i = 0; i <= 9; i++)
+	int num1, num2, calc;
+
+	for (num1 = 0; num1 <= 9; num1++)
 	{
-		for (j = 0; j <= 9; j++)
+		for (num2 = 0; num2 <= 9; num2++)
 		{
-			k = i * j;
-			_putchar(k + '0');
-			if (k != 81)
+			calc = num1 * num2;
+			if ((calc / 10) == 0)
 			{
-				_putchar(',');
-				_putchar(' ');
-	 		}
-											        }
+				if (num2 == 0)
+				{
+					_putchar('0');
+				}
+				if (num2 != 0)
+				{
+					_putchar(' ');
+					_putchar((calc % 10) + '0');
+				}
+				if (num2 < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+			}
+			else
+			{
+				_putchar((calc / 10) + '0');
+				_putchar((calc % 10) + '0');
+				if (num2 < 9)
+				{
+					_putchar(',');
+					_putchar(' ');
+				}
+			}
+		}
 		_putchar('\n');
 	}
 }
-
-
