@@ -1,22 +1,26 @@
 #include "main.h"
 
 /**
- * print_line - Print Lines
- * @n: parameter to determine the length of the line
+ * print_line - print lines on the terminal
+ * @n: length of lines in "_" to be printed
  */
+
 void print_line(int n)
 {
-	int k;
+	int start;
 
-	if (n  > 0)
+	start = 1;
+
+	if (n > 0)
 	{
-		for (k = 0; k <= n; k++)
+		while (start <= n)
 		{
 			_putchar('_');
+			start++;
 		}
+
 		_putchar('\n');
 	}
-
 	else
 	{
 		_putchar('\n');
