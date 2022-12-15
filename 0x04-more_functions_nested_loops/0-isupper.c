@@ -1,19 +1,14 @@
-#include <stdio.h>
 #include "main.h"
-/**
- *_isupper - Check if alphabets are lowercase.
- *@c: int value to be checked
- *
- * Return: return 1 if true else 0.
- */
 
+/**
+ * _isupper - check for uppercase letters
+ * @c: parameter to be checked
+ * Return: return 1 if uppercase and 0 otherwise
+ */
 int _isupper(int c)
 {
-
 	if (c >= 'A' && c <= 'Z')
 		return (1);
 	else
 		return (0);
-
-/*	return (0);*/
 }
