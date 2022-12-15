@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 /**
  *_isupper - Check if alphabets are lowercase.
  *@c: int value to be checked
