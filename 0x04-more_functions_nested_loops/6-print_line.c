@@ -3,7 +3,6 @@
 /**
  * print_line - Print Lines
  * @n: parameter to determine the length of the line
- * Return: return character
  */
 void print_line(int n)
 {
