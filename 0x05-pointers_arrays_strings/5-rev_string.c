@@ -12,7 +12,7 @@ void rev_string(char *s)
 	int len = strlen(s);
 	int k;
 	int index;
-	char rev_str[];
+	char rev_str[5000];
 
 	strcpy(rev_str, s);
 
