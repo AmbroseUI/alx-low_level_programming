@@ -9,25 +9,25 @@
 
 void rev_string(char *s)
 {
-	int k, len, len_1;
-	char f;
+	int len = strlen(s);
+	int k;
+	int index;
+	char rev_str[];
 
-	len = strlen(s);
+	strcpy(rev_str, s);
+
+	index = 0;
 
 	if (len > 0)
 	{
-		len_1 = len;
-		for (k = len_1; k >= 0; k--)
+		for (k = len - 1; k >= 0; k--)
 		{
-			 s[len - k] = s[k-1];
+			s[index] = rev_str[k];
+			index++;
 		}
-		/*printf("%s", s);*/
-		f = '\n';
-
 	}
 	else
 	{
-		f = '\n';
+		s[0] = '\0';
 	}
-	printf("%c", f);/*/_putchar(f);*/
 }
