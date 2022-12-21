@@ -13,7 +13,6 @@ int _atoi(char *s)
 	int length;
 	int k;
 	int result;
-	char *const pt;
 	
 	length = strlen(s);
 	
