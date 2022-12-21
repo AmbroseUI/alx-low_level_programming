@@ -11,7 +11,7 @@
 int _atoi(char *s)
 {
 	int length;
-	int k, x;
+	int k;
 	int result;
 
 	length = strlen(s);
