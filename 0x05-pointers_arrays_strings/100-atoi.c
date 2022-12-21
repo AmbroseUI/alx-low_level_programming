@@ -11,16 +11,19 @@
 int _atoi(char *s)
 {
 	int length;
-	int counter;
+	int k, x;
 	int result;
 
 	length = strlen(s);
-
+	
 	if (length > 0)
 	{
-		for (counter = 0; counter <= length; counter++)
+		for (k = 0; k <= length; k++)
 		{
-			result = atoi(s);
+			if (s[k] >= '0' && s[k] <= '9')
+			{
+				result = atoi(s[k]);
+			}
 		}
 		return (result);
 	}
