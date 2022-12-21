@@ -13,9 +13,8 @@ int _atoi(char *s)
 	int length;
 	int k;
 	int result;
-	
+
 	length = strlen(s);
-	
 	if (length > 0)
 	{
 		for (k = 0; k <= length; k++)
