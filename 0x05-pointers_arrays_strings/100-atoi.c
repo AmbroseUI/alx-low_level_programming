@@ -25,7 +25,7 @@ int _atoi(char *s)
 		{
 			for (num = 0; num <= 9; num++)
 			{
-				result = atoi(s[index]);
+				result = atoi(s);
 				index++;
 			}
 		}
