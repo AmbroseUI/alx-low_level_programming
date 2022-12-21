@@ -7,6 +7,7 @@
  * @s: string to be sorted
  * Return: integer value
  */
+
 int _atoi(char *s)
 {
 	int num;
