@@ -23,11 +23,7 @@ int _atoi(char *s)
 	{
 		for (counter = 0; counter <= length; counter++)
 		{
-			for (num = 0; num <= 9; num++)
-			{
-				result = atoi(s);
-				index++;
-			}
+			result = atoi(s);
 		}
 		return (result);
 	}
