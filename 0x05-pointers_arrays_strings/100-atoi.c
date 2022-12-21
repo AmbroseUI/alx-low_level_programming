@@ -14,7 +14,6 @@ int _atoi(char *s)
 	int counter;
 	int result;
 
-	index = 0;
 	length = strlen(s);
 
 	if (length > 0)
