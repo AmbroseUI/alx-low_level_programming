@@ -21,10 +21,7 @@ int _atoi(char *s)
 	{
 		for (k = 0; k <= length; k++)
 		{
-			if (s[k] >= '0' && s[k] <= '9')
-			{
-				result = atoi(s);
-			}
+			result = atoi(s);
 		}
 		return (result);
 	}
