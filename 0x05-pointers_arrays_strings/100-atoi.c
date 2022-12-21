@@ -15,8 +15,6 @@ int _atoi(char *s)
 	int result;
 	char *const pt;
 	
-	*prt = s;
-
 	length = strlen(s);
 	
 	if (length > 0)
@@ -25,7 +23,7 @@ int _atoi(char *s)
 		{
 			if (s[k] >= '0' && s[k] <= '9')
 			{
-				result = atoi(ptr[k]);
+				result = atoi(s);
 			}
 		}
 		return (result);
