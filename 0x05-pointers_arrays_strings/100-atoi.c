@@ -10,8 +10,6 @@
 
 int _atoi(char *s)
 {
-	int num;
-	int index;
 	int length;
 	int counter;
 	int result;
