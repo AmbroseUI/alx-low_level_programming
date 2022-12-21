@@ -32,4 +32,8 @@ int _atoi(char *s)
 	}
 
 	return (result);
+	else
+	{
+		return (0);
+	}
 }
