@@ -29,9 +29,8 @@ int _atoi(char *s)
 				index++;
 			}
 		}
+		return (result);
 	}
-
-	return (result);
 	else
 	{
 		return (0);
